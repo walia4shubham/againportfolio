@@ -391,8 +391,8 @@ img {
 }
 
 .work__img {
-  -webkit-box-shadow: 0px 4px 25px rgba(14, 36, 49, 0.15);
-          box-shadow: 0px 4px 25px rgba(14, 36, 49, 0.15);
+/*   -webkit-box-shadow: 0px 4px 25px rgba(14, 36, 49, 0.15);
+          box-shadow: 0px 4px 25px rgba(14, 36, 49, 0.15); */
   border-radius: .5rem;
   overflow: hidden;
 }
@@ -559,6 +559,15 @@ img {
   .home__img {
     right: 1%;
   }
+  &__img{
+      box-shadow: 0px 4px 25px rgba(14, 36, 49, 0.15);   
+    }
+    
+    .messagebtn{
+        margin:auto;
+   width:auto;
+   display: block;
+}
 }
 
 @media only screen and (max-width: 700px) {
@@ -568,5 +577,10 @@ img {
     .home__img{
        display: none;
    }
+  .messagebtn{
+             margin:auto;
+        width:auto;
+        display: block;
+    }
   }
 /*# sourceMappingURL=styles.css.map */
