@@ -258,8 +258,12 @@ img {
 
 .home__img {
   position: absolute;
-  right: 0;
-  bottom: 0;
+  top: 17%;
+  right: 0%;
+  bottom: 5%;
+  padding-left: 10rem;
+  height: auto;
+  max-width: 100%;
 }
 
 /*BUTTONS*/
@@ -391,13 +395,15 @@ img {
 }
 
 .work__img {
-/*   -webkit-box-shadow: 0px 4px 25px rgba(14, 36, 49, 0.15);
-          box-shadow: 0px 4px 25px rgba(14, 36, 49, 0.15); */
   border-radius: .5rem;
   overflow: hidden;
+  max-width: 100%;
+  height: auto;
 }
 
 .work__img img {
+  max-width: 100%;
+  height: auto;
   border: 2px solid rebeccapurple;
   -webkit-transition: 1s;
   transition: 1s;
@@ -423,12 +429,10 @@ img {
 }
 
 .contact__button {
-  display: block;
   border: none;
   outline: none;
   font-size: var(--normal-font-size);
   cursor: pointer;
-  margin-left: auto;
 }
 
 /* ===== FOOTER =====*/
@@ -513,7 +517,7 @@ img {
   }
   .home__img {
     width: 457px;
-    right: 1%;
+    right: 0%;
     bottom: 15%;
   }
   .about__container {
@@ -549,6 +553,11 @@ img {
   .contact__container {
     justify-items: center;
   }
+  .messagebtn {
+    margin: auto;
+    width: auto;
+    display: block;
+  }
 }
 
 @media screen and (min-width: 1024px) {
@@ -557,30 +566,29 @@ img {
     margin-right: auto;
   }
   .home__img {
-    right: 1%;
+    right: 0%;
   }
-  &__img{
-      box-shadow: 0px 4px 25px rgba(14, 36, 49, 0.15);   
-    }
-    
-    .messagebtn{
-        margin:auto;
-   width:auto;
-   display: block;
-}
+  __img {
+    -webkit-box-shadow: 0px 4px 25px rgba(14, 36, 49, 0.15);
+            box-shadow: 0px 4px 25px rgba(14, 36, 49, 0.15);
+  }
+  .messagebtn {
+    margin: auto;
+    width: auto;
+    display: block;
+  }
 }
 
-@media only screen and (max-width: 700px) {
-    body {
-    //   background-color: lightblue;
-    }
-    .home__img{
-       display: none;
-   }
-  .messagebtn{
-             margin:auto;
-        width:auto;
-        display: block;
-    }
+@media (max-width: 700px) {
+  .home__img {
+    position: absolute;
+    right: 0%;
+    top: 32%;
   }
+  .messagebtn {
+    margin: auto;
+    width: auto;
+    display: block;
+  }
+}
 /*# sourceMappingURL=styles.css.map */
