@@ -584,6 +584,7 @@ img {
     position: absolute;
     right: 0%;
     top: 32%;
+    display:none;
   }
   .messagebtn {
     margin: auto;
