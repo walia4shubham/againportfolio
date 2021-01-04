@@ -220,9 +220,14 @@ img{
     }
 
     &__img{
+        // border:2px solid red;
         position: absolute;
-        right: 0;
-        bottom: 0;
+        top:17%;
+        right: 0%;
+        bottom: 5%;
+        padding-left: 10rem;
+        height: auto;
+        max-width: 100%;
         // width: 295px;
     }
 }
@@ -333,12 +338,18 @@ img{
         row-gap: 2rem;
     }
     &__img{
-        box-shadow: 0px 4px 25px rgba(14, 36, 49, 0.15); 
+        // box-shadow: 0px 4px 25px rgba(14, 36, 49, 0.15); 
         
         border-radius: .5rem;
-        overflow: hidden;
+             overflow: hidden;
+            max-width: 100%;
+            height: auto;
+            
         
         & img{
+            max-width: 100%;
+            height: auto;
+
             border:2px solid rebeccapurple;
             transition: 1s;
             height: 13rem;
@@ -364,12 +375,12 @@ img{
         margin-bottom: var(--mb-4);
     }
     &__button{
-        display: block;
+        // display: block;
         border: none;
         outline: none;
         font-size: var(--normal-font-size);
         cursor: pointer;
-        margin-left: auto;
+        // margin-left: auto;
     }
 }
 
@@ -432,6 +443,7 @@ img{
             color: var(--second-color);
         }
     }
+    
     .home{
         height: 100vh;
         &__data{
@@ -452,7 +464,7 @@ img{
             // max-width: 100%;
             // height:auto;
             width: 457px;
-            right: 1%;
+            right: 0%;
             bottom: 15%;
         }
     }
@@ -478,10 +490,13 @@ img{
     }
     .work{
         &__container{
+            
+           
             grid-template-columns: repeat(3,1fr);
             grid-template-rows: repeat(2, 1fr);
             column-gap: 2rem;
         }
+        
     }
     .contact{
         &__form{
@@ -491,6 +506,11 @@ img{
             justify-items: center;
         }
     }
+    .messagebtn{
+        margin:auto;
+        width:auto;
+       display: block;
+     }
 
 }
 @media screen and(min-width: 1024px){
@@ -500,7 +520,37 @@ img{
     }
     .home{
         &__img{
-            right: 1%;
+            right: 0%;
         }
     }
+    &__img{
+      box-shadow: 0px 4px 25px rgba(14, 36, 49, 0.15);   
+    }
+    
+    .messagebtn{
+        margin:auto;
+   width:auto;
+   display: block;
 }
+}
+
+@media  (max-width: 700px) {
+    .home__img{
+        position: absolute;
+        
+        right: 0%;
+        top:32%;
+    }
+    // .try{
+    //     margin:auto;
+    //     width:1rem;
+    //     display: block;
+        
+    // }
+    .messagebtn{
+             margin:auto;
+        width:auto;
+        display: block;
+    }
+  }
+  
